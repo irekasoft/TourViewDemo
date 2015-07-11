@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NB4-2f-WXi">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--TourVC-->
+        <scene sceneID="cce-Im-SLd">
+            <objects>
+                <viewController id="NB4-2f-WXi" customClass="TourVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bgo-pi-fbr"/>
+                        <viewControllerLayoutGuide type="bottom" id="aG4-N6-vTa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J7I-j6-1Wt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ys-05-YSc">
+                                <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBX-VQ-hzQ">
+                                        <rect key="frame" x="10" y="4" width="34" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skip:" destination="NB4-2f-WXi" eventType="touchUpInside" id="xpb-5K-i94"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mm-cv-nfI">
+                                        <rect key="frame" x="540" y="4" width="50" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="avp-Rs-VCl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="done:" destination="NB4-2f-WXi" eventType="touchUpInside" id="5vk-Kk-QEh"/>
+                                        </connections>
+                                    </button>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="pdG-eg-5ct">
+                                        <rect key="frame" x="289" y="4" width="23" height="37"/>
+                                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="currentPageIndicatorTintColor" name="shadowColor" catalog="System" colorSpace="catalog"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4Mm-cv-nfI" secondAttribute="trailing" constant="10" id="FFN-qa-Buc"/>
+                                    <constraint firstAttribute="centerX" secondItem="pdG-eg-5ct" secondAttribute="centerX" id="Nul-az-4hR"/>
+                                    <constraint firstAttribute="bottom" secondItem="EBX-VQ-hzQ" secondAttribute="bottom" constant="8" id="Wwb-jl-ccd"/>
+                                    <constraint firstItem="EBX-VQ-hzQ" firstAttribute="leading" secondItem="1Ys-05-YSc" secondAttribute="leading" constant="10" id="bjl-oC-LYD"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Mm-cv-nfI" secondAttribute="bottom" constant="8" id="qek-zm-Fcp"/>
+                                    <constraint firstAttribute="height" constant="45" id="vgT-GH-lqz"/>
+                                    <constraint firstAttribute="bottom" secondItem="pdG-eg-5ct" secondAttribute="bottom" constant="4" id="wIP-pW-MWf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aG4-N6-vTa" firstAttribute="top" secondItem="1Ys-05-YSc" secondAttribute="bottom" id="Qfk-fh-bnX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Ys-05-YSc" secondAttribute="trailing" constant="-16" id="awR-MF-EBK"/>
+                            <constraint firstItem="1Ys-05-YSc" firstAttribute="leading" secondItem="J7I-j6-1Wt" secondAttribute="leadingMargin" constant="-16" id="ocs-6f-o2t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_done" destination="4Mm-cv-nfI" id="Wle-GG-G8e"/>
+                        <outlet property="btn_skip" destination="EBX-VQ-hzQ" id="qq5-w3-WqJ"/>
+                        <outlet property="pageControl" destination="pdG-eg-5ct" id="xiG-R1-Yfg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dV-CK-JE8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="451"/>
+        </scene>
+        <!--Page ContentVC-->
+        <scene sceneID="n9l-SQ-j1y">
+            <objects>
+                <viewController storyboardIdentifier="PageContentVC" id="XLw-Hm-TCn" customClass="PageContentVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8eU-Yb-6kG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ler-yc-F0s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="flO-JS-yzK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page1.png" translatesAutoresizingMaskIntoConstraints="NO" id="8AJ-MF-MEA">
+                                <rect key="frame" x="140" y="0.0" width="320" height="320"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-Nf-akL">
+                                <rect key="frame" x="0.0" y="320" width="600" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="IyL-1s-Ygo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kp-fm-kek">
+                                <rect key="frame" x="140" y="375" width="320" height="225"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="cw2-sA-70k"/>
+                                </constraints>
+                                <string key="text">Skinny organic bar blue mountain dark mocha skinny. Crema, grinder, carajillo, seasonal, espresso robust, roast cultivar mug aged beans. Eu id and cortado galão cappuccino crema affogato caffeine.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90223619105819275" green="0.90223619105819275" blue="0.90223619105819275" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VcJ-Nf-akL" firstAttribute="top" secondItem="8AJ-MF-MEA" secondAttribute="bottom" id="0ko-yo-UWU"/>
+                            <constraint firstItem="VcJ-Nf-akL" firstAttribute="leading" secondItem="flO-JS-yzK" secondAttribute="leadingMargin" constant="-16" id="8NQ-8N-BNC"/>
+                            <constraint firstAttribute="centerX" secondItem="8AJ-MF-MEA" secondAttribute="centerX" id="F09-L1-QBd"/>
+                            <constraint firstItem="Ler-yc-F0s" firstAttribute="top" secondItem="8kp-fm-kek" secondAttribute="bottom" id="I5h-D0-QzD"/>
+                            <constraint firstItem="8kp-fm-kek" firstAttribute="top" secondItem="VcJ-Nf-akL" secondAttribute="bottom" constant="8" id="JFI-nv-iTn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VcJ-Nf-akL" secondAttribute="trailing" constant="-16" id="ZEc-mm-l5w"/>
+                            <constraint firstAttribute="centerX" secondItem="8kp-fm-kek" secondAttribute="centerX" id="cjB-a8-c2e"/>
+                            <constraint firstItem="8AJ-MF-MEA" firstAttribute="top" secondItem="8eU-Yb-6kG" secondAttribute="bottom" id="kzX-Z1-ohg"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="img_bg" destination="8AJ-MF-MEA" id="BSM-7k-paa"/>
+                        <outlet property="lbl_title" destination="VcJ-Nf-akL" id="5JC-Uc-eYp"/>
+                        <outlet property="tv_body" destination="8kp-fm-kek" id="3H2-Nu-gB7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2et-PG-kba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="451"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Page1.png" width="320" height="320"/>
+    </resources>
+</document>

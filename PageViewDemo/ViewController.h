@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TourVC.h"
 
 @interface ViewController : UIViewController
 
-
 @end
-
