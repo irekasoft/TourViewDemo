@@ -90,10 +90,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Page1.png" translatesAutoresizingMaskIntoConstraints="NO" id="8AJ-MF-MEA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page1.png" translatesAutoresizingMaskIntoConstraints="NO" id="8AJ-MF-MEA">
                                 <rect key="frame" x="140" y="0.0" width="320" height="320"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-Nf-akL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-Nf-akL">
                                 <rect key="frame" x="0.0" y="320" width="600" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="IyL-1s-Ygo"/>
@@ -102,11 +102,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kp-fm-kek">
-                                <rect key="frame" x="140" y="375" width="320" height="225"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kp-fm-kek">
+                                <rect key="frame" x="150" y="367" width="300" height="233"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="cw2-sA-70k"/>
+                                    <constraint firstAttribute="width" constant="300" id="cw2-sA-70k"/>
                                 </constraints>
                                 <string key="text">Skinny organic bar blue mountain dark mocha skinny. Crema, grinder, carajillo, seasonal, espresso robust, roast cultivar mug aged beans. Eu id and cortado galão cappuccino crema affogato caffeine.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
@@ -119,7 +119,7 @@
                             <constraint firstItem="VcJ-Nf-akL" firstAttribute="leading" secondItem="flO-JS-yzK" secondAttribute="leadingMargin" constant="-16" id="8NQ-8N-BNC"/>
                             <constraint firstAttribute="centerX" secondItem="8AJ-MF-MEA" secondAttribute="centerX" id="F09-L1-QBd"/>
                             <constraint firstItem="Ler-yc-F0s" firstAttribute="top" secondItem="8kp-fm-kek" secondAttribute="bottom" id="I5h-D0-QzD"/>
-                            <constraint firstItem="8kp-fm-kek" firstAttribute="top" secondItem="VcJ-Nf-akL" secondAttribute="bottom" constant="8" id="JFI-nv-iTn"/>
+                            <constraint firstItem="8kp-fm-kek" firstAttribute="top" secondItem="VcJ-Nf-akL" secondAttribute="bottom" id="JFI-nv-iTn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VcJ-Nf-akL" secondAttribute="trailing" constant="-16" id="ZEc-mm-l5w"/>
                             <constraint firstAttribute="centerX" secondItem="8kp-fm-kek" secondAttribute="centerX" id="cjB-a8-c2e"/>
                             <constraint firstItem="8AJ-MF-MEA" firstAttribute="top" secondItem="8eU-Yb-6kG" secondAttribute="bottom" id="kzX-Z1-ohg"/>
