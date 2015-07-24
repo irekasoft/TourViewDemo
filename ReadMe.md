@@ -23,3 +23,17 @@ hasOpened = YES;
 //
 }
 `
+
+
+
+`
+- (IBAction)viewTour:(id)sender {
+
+UIStoryboard *tourStoryboard = [UIStoryboard storyboardWithName:@"Tour" bundle:nil];
+TourVC *tourVC = [tourStoryboard instantiateInitialViewController];
+[self presentViewController:tourVC animated:YES completion:nil];
+
+
+
+}
+`
