@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A385D8471B626E360013240F /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = A385D8461B626E360013240F /* ReadMe.md */; };
 		A3B667161B507DEA00F03258 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B667151B507DEA00F03258 /* main.m */; };
 		A3B667191B507DEA00F03258 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B667181B507DEA00F03258 /* AppDelegate.m */; };
 		A3B6671F1B507DEA00F03258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B6671D1B507DEA00F03258 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A385D8461B626E360013240F /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		A3B667101B507DEA00F03258 /* PageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B667141B507DEA00F03258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3B667151B507DEA00F03258 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		A3B667071B507DEA00F03258 = {
 			isa = PBXGroup;
 			children = (
+				A385D8461B626E360013240F /* ReadMe.md */,
 				A3B667121B507DEA00F03258 /* PageViewDemo */,
 				A3B6672C1B507DEA00F03258 /* PageViewDemoTests */,
 				A3B667111B507DEA00F03258 /* Products */,
@@ -271,6 +274,7 @@
 			files = (
 				A3B667191B507DEA00F03258 /* AppDelegate.m in Sources */,
 				A3B667161B507DEA00F03258 /* main.m in Sources */,
+				A385D8471B626E360013240F /* ReadMe.md in Sources */,
 				A3B667491B5089BE00F03258 /* ViewController.m in Sources */,
 				A3EDEEE91B6166D8001F0FD5 /* TourVC.m in Sources */,
 				A3EDEEE61B6166D8001F0FD5 /* PageContentVC.m in Sources */,
